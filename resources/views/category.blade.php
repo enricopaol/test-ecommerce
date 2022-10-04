@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="py-3 container">
-    Home / {{ $category->name }}
+    <a href="{{ route('home') }}" class="text-warning">Home</a> / {{ $category->name }}
 </div>
 
 <div class="container py-5">

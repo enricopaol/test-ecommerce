@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="py-3 container">
-    Home / {{ $product->category->name }} / {{ $product->name }}
+    <a href="{{ route('home') }}" class="text-warning">Home</a> / <a class="text-warning" href="route('categories.show', ['category'=> $product->category->id])">{{ $product->category->name }}</a> / {{ $product->name }}
 </div>
 
 <div class="container pb-5">
@@ -12,14 +12,14 @@
         </div>
 
         <div class="col-md-6 text-warning">
-            <h1 class="h3">{{ $product->name }}</h1>            
+            <h1 class="h3">{{ $product->name }}</h1>
             <p class="h2">{{ $product->price }} €</p>
 
             <div class="d-flex">
                 <input type="number" class="form-control mr-2" style="width:60px" value="1">
                 <button class="btn btn-outline-warning">Aggiungi al carrello</button>
             </div>
-        </div>        
+        </div>
     </div>
 
     <div class="container">

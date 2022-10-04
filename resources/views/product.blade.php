@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="py-3 container">
-    <a href="{{ route('home') }}" class="text-warning">Home</a> / <a class="text-warning" href="route('categories.show', ['category'=> $product->category->id])">{{ $product->category->name }}</a> / {{ $product->name }}
+    <a href="{{ route('home') }}" class="text-warning">Home</a> / <a class="text-warning" href="route('categories.show', ['category'=> 1])">{{ $product->category->name }}</a> / {{ $product->name }}
 </div>
 
 <div class="container pb-5">
